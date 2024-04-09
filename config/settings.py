@@ -124,6 +124,10 @@ STATICFILES_DIRS = [
     "/var/www/static/",
 ]
 
+import os
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Base url to serve media files
 MEDIA_URL = '/media/'
 
